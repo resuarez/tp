@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projet de java2">
+    <meta name="author" content="Meng et Ruben">
+    <title>Boutique en ligne</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
+                <div class="well logo">
+                    <a href="index.html">
+                        Sport <span>Magazine en ligne</span>
+                    </a>
+
+                    <div>Où vous ne trouverez rien!.</div>
+                </div>
+            </div>
+            <!-- Fin Logo -->
+
+            <!-- Form Recherche TODO: action form-->
+            <div class="col-lg-5 col-md-5 col-sm-7 col-xs-12">
+                <div class="well">
+                    <form action="#">
+                        <div class="input-group">
+                            <input type="text" class="form-control input-search" placeholder="Rechercher"/>
+	                            <span class="input-group-btn">
+	                                <button class="btn btn-default no-border-left" type="submit"><i
+                                            class="fa fa-search"></i></button>
+	                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Fin Form Recherche -->
+
+            <!-- Liste d'achats -->
+            <div class="col-lg-3 col-md-4 col-sm-5">
+                <div class="well">
+                    <div class="btn-group btn-group-cart">
+                        <!--button achat-->
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span class="pull-left"><i class="fa fa-shopping-cart icon-cart"></i></span>
+                            <span class="pull-left" id="nbAchats">Panier: 2 produits(s)</span>
+                            <span class="pull-right"><i class="fa fa-caret-down"></i></span>
+                        </button>
+                        <!--liste dans le button TODO:rafraichir les items-->
+                        <ul class="dropdown-menu cart-content" role="menu">
+                            <li>
+                                <a href="detail.html">
+                                    <b>Sport1</b>
+                                    <span>x1 $528.96</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="detail.html">
+                                    <b>Sport2</b>
+                                    <span>x1 $428.96</span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="cart.html">Total: $957.92</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Liste d'achats-->
+        </div>
+    </div>
+</header>
+
+<!-- Menu -->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- text logo pour mobile -->
+            <a class="navbar-brand visible-xs" href="index.html">Sport <span>Magazine en ligne</span></a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="cart.html">Panier</a></li>
+                <li><a href="checkout.html">Passer la commande</a></li>
+                <li><a href="about.html">À propos de nous</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-in"></i> Identifiez-vous</a></li>
+                <li><a href="register.html" class="active">Nouveau Client?</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Fin Menu -->
+
+<!--PARTE PRINCIPALE-->
+
+<div class="container">
+
+    <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="white-container">
+            <span class="title">REGISTER</span>
+
+            <p>Lorem ipsum Ex aliqua tempor nisi laboris dolor id laborum irure minim tempor in sit dolore amet sit esse
+                nostrud tempor nulla consequat aute in nostrud laboris sint ullamco amet nisi pariatur officia nulla
+                pariatur in id et labore dolore ad sit.</p>
+
+            <!-- Form Register -->
+            <form action="#">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="first_name">First Name (*)</label>
+                    <input type="text" class="form-control" id="first_name"><br clear="all"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="last_name">Last Name (*)</label>
+                    <input type="text" class="form-control" id="last_name"><br clear="all"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="email">Email (*)</label>
+                    <input type="text" class="form-control" id="email"><br clear="all"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="username">Username (*)</label>
+                    <input type="text" class="form-control" id="username"><br clear="all"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="password">Password (*)</label>
+                    <input type="password" class="form-control" id="password"><br clear="all"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label for="confirm_password">Confirm Password (*)</label>
+                    <input type="password" class="form-control" id="confirm_password"><br clear="all"/>
+                </div>
+                <div class="clearfix"></div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> I agree with <a href="#">Terms and Conditions.</a>
+                    </label>
+                </div>
+                <button class="btn btn-danger">Register</button>
+            </form>
+            <!-- End Form Register -->
+        </div>
+
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-4">
+
+        <!-- Login Form -->
+        <div class="white-container">
+            <span class="title">ALREADY REGISTERED ?</span>
+
+            <form role="form">
+                <div class="form-group">
+                    <div class="input-group login-input">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                    <br>
+
+                    <div class="input-group login-input">
+                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-sm btn-primary pull-right"><i
+                            class="fa fa-long-arrow-right"></i> Login
+                    </button>
+                    <button type="button" class="btn btn-xs btn-primary btn-login-social"><i class="fa fa-facebook"></i>
+                    </button>
+                    <button type="button" class="btn btn-xs btn-info btn-login-social"><i class="fa fa-twitter"></i>
+                    </button>
+                    <button type="button" class="btn btn-xs btn-danger btn-login-social"><i
+                            class="fa fa-google-plus"></i></button>
+                </div>
+            </form>
+        </div>
+        <!-- End Login Form -->
+
+    </div>
+
+</div>
+
+<footer>
+    <div class="container">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="column">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="about.html">À Propos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="column">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="catalogue.html">Cras justo odio</a></li>
+                    <li><a href="catalogue.html">Dapibus ac facilisis in</a></li>
+                    <li><a href="catalogue.html">Morbi leo risus</a></li>
+                    <li><a href="catalogue.html">Porta ac consectetur ac</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="column">
+                <h4>Coordonnées</h4>
+                <ul>
+                    <li><a href="contact.html">Nous Contacter</a></li>
+                    <li><a href="#">Adresse: 1850 rue Sherbrooke, Montreal, QC H0H 0H0</a></li>
+                    <li><a href="#">Téléphone: +1 (514) 555-5555</a></li>
+                    <li><a href="#">Courriel: sport@isi-mtl-com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="column">
+                <h4>Nous suivre</h4>
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-google-plus"></i> Google Plus</a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i> FaceBook</a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="navbar-inverse text-center copyright">
+        Copyright &copy; 2015 Sports Tous les droits reservés
+    </div>
+</footer>
+
+<a href="#top" class="back-top text-center" onclick="$('body,html').animate({scrollTop:0},500); return false">
+    <i class="fa fa-angle-double-up"></i>
+</a>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.blImageCenter.js"></script>
+<script src="js/bootstrap.touchspin.js"></script>
+<script src="js/javascript.js"></script>
+</body>
+
+<!-- Mirrored from demo.18maret.com/demo/mimity/v1.3/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Nov 2015 17:33:32 GMT -->
+</html>
